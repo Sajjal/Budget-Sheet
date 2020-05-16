@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>
+        S & D Budget Sheet
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="data-entry">
+        <h1>S & D Budget-Sheet</h1>
+        <div class="notification" id="notification">
+            <div align="left">
+                <a href="/"><img src="./images/add.png" height="50" width="50"></a>
+                <a href="/income"><img src="./images/income.png" height="50" width="50"></a>
+                <a href="/expenses"><img src="./images/expense.png" height="50" width="50"></a>
+                <a href="/search"><img src="./images/explore.png" height="50" width="50"></a>
+
+                <div class="searchbox" style="float: right; width: 450px"><input type='text' id="search" onkeyup="searchTable()" placeholder="🔎    Search for description in this table..."></div>
+            </div>
+        </div>
+        <div class="notification">
+            <%=data.message%>
+        </div>
+        <div id='data_Table'>
+            <center>
+                <table class="content-table" id='dataTable'>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%data.records.forEach(function(data) { %>
+                            <tr>
+                                <td>
+                                    <%=data.date%>
+                                </td>
+                                <td>
+                                    <%=data.category%>
+                                </td>
+                                <td>
+                                    <%=data.description%>
+                                        <strong><%=data.total%> </strong>
+                                </td>
+                                <td>
+                                    <%=data.amount%>
+                                        <strong><%=data.sum%></strong>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+            </center>
+        </div>
+
+        <input type="button" value="Export As PDF 🖨 " id="btPrint " class='btn' onclick="exportPDF(); " />
+
+    </div>
+
+</body>
+
+</html>

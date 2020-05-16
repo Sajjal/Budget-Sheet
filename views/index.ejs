@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>
+        S & D Budget Sheet
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="data-entry">
+
+        <h1>S & D Budget-Sheet</h1>
+        <div class="notification">
+            <div align="left">
+                <a href="/"><img src="./images/add.png" height="50" width="50"></a>
+                <a href="/income"><img src="./images/income.png" height="50" width="50"></a>
+                <a href="/expenses"><img src="./images/expense.png" height="50" width="50"></a>
+                <a href="/search"><img src="./images/explore.png" height="50" width="50"></a>
+
+                <div class="searchbox" style="float: right; width: 450px"><input type='text' placeholder="🔎    Search..." disabled></div>
+            </div>
+        </div>
+        <div class="notification" id="notification">
+            <%=message%>
+        </div>
+
+        <form id="form" action='/' method='post'>
+            <div class="radiobox" id="radio_type">
+                <p class="radio_label">Type </p>
+                <input type="radio" id="income" name="type" value="Income" required onclick="show_cat_income();" />
+                <label for="income">Income</label>
+                <input type="radio" id="expenses" name="type" value="Expenses" onclick="show_cat_expenses();" />
+                <label for="expenses">Expenses</label>
+            </div>
+
+            <div class="txtbox" id="show-expenses" style='display:none'>
+                <label>Category </label>
+                <select id="category_exp" name="category_exp">
+                    <option>Select a Category...(*Required)</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="rent">Rent</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="vehicle">Vehicle</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="miscellaneous">Miscellaneous</option>
+                  </select>
+            </div>
+
+            <div class="txtbox" id="show-income" style='display:none'>
+                <label>Category </label>
+                <select id="category_inc" name="category_inc">
+                    <option>Select a Category...(*Required)</option>
+                    <option value="salary">Salary</option>
+                    <option value="bonus">Bonus</option>
+                    <option value="rewards">Rewards</option>
+                    <option value="other">Other</option>
+                  </select>
+            </div>
+
+            <div class="txtbox">
+                <label>Description </label>
+                <input type="text" name="description" placeholder="What is it for?" required>
+            </div>
+
+            <div class="txtbox">
+                <label>Amount</label>
+                <input id="amount" type="text" name="amount" placeholder="Enter the Amount." required>
+            </div>
+            <input type="submit" class="btn" value="Save  📝" />
+        </form>
+    </div>
+</body>
+
+</html>

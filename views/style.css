@@ -1,0 +1,180 @@
+body {
+    margin: 0px;
+    padding: 70px 0;
+    background: url('./images/bg.jpeg');
+    background-size: cover;
+}
+
+.data-entry {
+    min-width: 950px;
+    max-width: 600px;
+    background: #f1f1f1;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+}
+
+.data-entry h1 {
+    margin-top: 0;
+    text-decoration: underline;
+    background-color: #538cc6;
+    padding: 30px 15px;
+    color: f0f0f0;
+}
+
+.data-entry a {
+    color: #333;
+}
+
+.notification {
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+    display: block;
+    text-align: center;
+    color: #538cc6;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-left: 10px
+}
+
+.txtbox {
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.searchbox input {
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 15px 18px;
+    padding-right: 15px;
+    border-radius: 8px;
+    width: 100%;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.radiobox {
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 1px 18px 8px 18px;
+    border-radius: 8px;
+}
+
+.txtbox label {
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.txtbox input,
+select {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.radio_label {
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+img {
+    padding: 1px;
+    border: 1px solid #538cc6;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    background: #538cc6;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 5%;
+    height: 2em;
+    margin-left: 50px;
+}
+
+input[type="radio"]+label {
+    font-size: 18px;
+    color: #333;
+}
+
+a:link,
+a:visited {
+    padding: 5px 5px;
+    padding-left: 25px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: blue;
+    color: white;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: 1.8em;
+    min-width: 870px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #538cc6;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 15px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #E8E8E8;
+}
+
+.content-table tbody tr:last-of-type {
+    background-color: #538cc6;
+    color: white
+}
