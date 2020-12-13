@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>S & D Budget Sheet</title>
+    <link rel="shortcut icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="data-entry">
+      <h1>S & D Budget-Sheet</h1>
+
+      <div class="notification" id="notification"><%=message%></div>
+
+      <form id="form" action="/login" method="post">
+        <div class="txtbox">
+          <input id="code" type="text" name="accessCode" placeholder="Enter Access Code..." required />
+        </div>
+        <input type="submit" class="btn" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
