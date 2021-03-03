@@ -4,17 +4,9 @@
 
 It is a simple accounting application to keep track of personal financial transactions.
 
-The new version of this application is developed using Node.js, Express.js, and VueJS with Quasar. MongoDB is used as a database. The user interface is optimized for mobile devices.
-The old version of this application was developed using Node.js, Express.js, and some basic HTML and CSS. Google-Spreadsheet is used as a database. The user interface is responsive and minimal.
+This application is developed using Node.js, Express.js, and some basic HTML and CSS. Google-Spreadsheet is used as a database. The user interface is responsive and minimal.
 
 **Feel free to Clone and Fork. Commercial Distribution is Prohibited.**
-
----
-
-## Update (_02 March 2021_)
-
-After using it for almost a year, Deepa and I have discovered the necessity of some new features for this application. Such as a dashboard to show the total income and expenses of a given period, filter income and expense records based on individual category, and a robust user interface for mobile devices. Therefore, I have updated this application to accommodate those features.
-The background below summarizes the development story of the Old Version.
 
 ---
 
@@ -31,46 +23,6 @@ I got motivated at that very moment to develop this application. I spent the las
 That’s the story behind the development of this application now let’s move on to installation.
 
 ---
-
-## Setup New Version:
-
-## Prerequisites:
-
-### Node.js:
-
-- Install **Node.js** on your machine.
-
-### MongoDB:
-
-- Install and run **MongoDB** on your machine.
-
----
-
-## Installation:
-
-- Clone this Project
-- **cd** to the `backendExpress` directory
-- Modify the value of `TOKEN_SECRET`, `ACCESS_CODE`, `DB`, on `.env` file
-
-  > **Note:** `.env` file might be hidden
-
-- Open terminal/command-prompt and type:
-
-      	i. npm install
-
-      	ii. npm start
-
-- Type `http://localhost:3000` on your browser's address bar and hit Enter. **Enjoy.**
-
----
-
-## Demo:
-
-<img src="https://github.com/Sajjal/Budget-Sheet/blob/master/NEW_DARK_UI/frontendVue/public/newUI.png">
-
----
-
-## Setup OLD Version:
 
 ## Prerequisites:
 
