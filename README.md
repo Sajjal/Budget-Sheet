@@ -66,7 +66,7 @@ That’s the story behind the development of this application now let’s move o
 
 ## Demo:
 
-<img src="https://github.com/Sajjal/Budget-Sheet/blob/master/NEW_DARK_UI/frontendVue/public/newUI.png">
+<img src="https://github.com/Sajjal/Budget-Sheet/blob/master/NEW_DARK_UI/frontendVue/public/newUI.jpg">
 
 ---
 
